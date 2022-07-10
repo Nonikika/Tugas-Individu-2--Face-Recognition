@@ -5,10 +5,10 @@ import face_recognition
 file_video_stream = cv2.VideoCapture('Images/testing/jkjh.mp4')
 
 #load the sample images and get the 128 face embeddings from them
-jungkook_image = face_recognition.load_image_file('Images/Samples/jungkook.jpg')
+jungkook_image = face_recognition.load_image_file('Images/Samples/jungkook.png')
 jungkook_face_encodings = face_recognition.face_encodings(jungkook_image)[0]
 
-J-hope_image = face_recognition.load_image_file('Images/Samples/J-hope.jpg')
+J-hope_image = face_recognition.load_image_file('Images/Samples/J-hope.png')
 J-hope_face_encodings = face_recognition.face_encodings(J-hope_image)[0]
 
 #save the encodings and the corresponding labels in seperate arrays in the same order
